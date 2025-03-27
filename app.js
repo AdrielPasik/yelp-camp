@@ -44,7 +44,7 @@ const helmet = require('helmet');
 async function main() {
     try {
         // Usamos el método "connect" de mongoose para conectarnos a la base de datos
-        await mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp', {
+        await mongoose.connect(dbUrl, {
             // Opciones de conexSión
             useNewUrlParser: true,        // Utilizar el nuevo motor de análisis de URL (parser)
             useUnifiedTopology: true,      // Utilizar un motor de topología unificada (nueva configuración de red)
